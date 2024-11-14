@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="signup" id="signup">
+        <div class="cont1"><img src="img1.png" alt="" srcset="" height="500px"></div>
+        <div class="cont1">
+            <div class="loginform">
+                <h1>Create a New Accout</h1>
+                <p>JOIN US TODAY</p>
+                <div class="titles">Full Name</div>
+                <input placeholder="Enter your Full Name" type="text" id="regUsername">
+                <div class="titles">Email Address(optional)</div>
+                <input placeholder="Enter your Email Address" type="text">
+                <div class="titles">Password</div>
+                <input placeholder="Choose a Password" type="password" id="regPassword">
+                <div class="titles">Confirm Password</div>
+                <input placeholder="Confirm Password" type="password" id="confirmRegPassword"><br>
+                <button class="Signup" type="submit" onclick="registerUser()">Sign up</button>
+                <p>Already have an account? <a href="#" onclick="showLoginForm()">login</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="login" id="login">
+        <div class="cont1"><img src="img1.png" alt="" srcset="" height="500px"></div>
+        <div class="cont1">
+            <div class="loginform">
+                <h1>Welcome Here!</h1>
+                <p>Thanks For Joining</p>
+                <div class="titles">User Name</div>
+                <input placeholder="Enter your Full Name" type="text" id="loginUsername">
+                <div class="titles">Password</div>
+                <input placeholder="Choose a Password" type="password" id="loginPassword"><br>
+                <button class="Signup" type="submit" onclick="loginUser()">Login</button>
+                <p>New Here? Register yourself. <a href="#" onclick="showRegisterForm()">SignUp</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="securedPage">
+        <div class="cont1">
+            <div class="welcomePage">
+                <h1> Welcome to Our Website</h1>
+                <p>Thanks For Joining</p>
+                <div class="titles">Hi my name is Zeeshan Danish. I am glad to see you here. This is not an production level webiste. This is just a product for my internship offered by Oasis Infobyte. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio, ad est fuga commodi odit nam minus expedita in accusamus itaque obcaecati, quos neque dolorem nihil nesciunt et qui quas.</div>
+                <br>
+                <button class="logout" type="submit" onclick="logout()">LogOut</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
